@@ -1,22 +1,293 @@
 .App {
   text-align: center;
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins|Roboto:900|Zilla+Slab&display=swap');
 
-.App-logo {
-  height: 40vmin;
+.bg{
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.521),
+    rgba(0, 0, 0, 0.856)
+   
+    ), url('../src/images/background.jpg');
+    
+position: fixed;
+
+/* Full height */
+min-height: 100vh;
+top: 0;
+left: 0;
+z-index: -1;
+min-width: 100%;
+
+
+/* Center and scale the image nicely */
+background-position: center ;
+background-repeat: no-repeat;
+background-size: cover;
+overflow:hidden; 
+
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1{
+   font-family: 'Poppins', sans-serif;
   color: white;
+  text-align: center;
+  font-size: 4.5em;
+  
+}
+input[type="text"] {
+  
+  background-color: whitesmoke;
+  width: 30%;
+  padding: 15px 22px;
+  margin-top: 10px ;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  border: 4px solid #03f7ff;
+  border-radius: 5px;   
+   text-align: center;
+   font-size: 1.45em;
+}
+.mainDiv{
+  text-align: center;
 }
 
-.App-link {
-  color: #09d3ac;
+button{
+  background-color: whitesmoke;
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.45em;
+  padding: 15px 42px;
+  border-radius: 5px; 
+  border: 2px solid #03f7ff;
+}
+button:hover{
+  background-color: #03f7ff;
+  
+}
+
+.content{
+  margin: 40px;
+  border: 4px solid #03f7ff;
+  padding: 40px;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+}
+img{
+  max-width:100%;
+    height:auto;
+}
+.imageUser{
+  border: 5px white;
+}
+h2{font-family: 'Hind Madurai', sans-serif;
+  color:#03f7ff;
+  font-size: 2.5em;}
+h3{
+  
+  font-family: 'Hind Madurai', sans-serif;
+  color:white;
+  font-size: 1.45em;
+}
+a{
+  text-decoration: none;
+}
+@media screen and (max-width:958px){
+
+  input[type="text"] {
+  
+    background-color: whitesmoke;
+    width: 30%;
+    padding: 15px 22px;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 4px solid #03f7ff;
+    border-radius: 5px;   
+     text-align: center;
+     font-size: 1.35em;
+  }
+
+  button:hover{
+    background-color: #03f7ff;
+    
+  }
+  
+
+
+
+}
+@media screen and (max-width:768px){
+
+  input[type="text"] {
+  
+    background-color: whitesmoke;
+    width: 50%;
+    padding: 15px 22px;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 4px solid #03f7ff;
+    border-radius: 5px;   
+     text-align: center;
+     font-size: 1.35em;
+  }
+
+  button{
+    background-color: whitesmoke;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.35em;
+    padding: 12px 32px;
+    border-radius: 5px; 
+    border: 2px solid #03f7ff;
+  }
+
+  button:hover{
+    background-color: #03f7ff;
+    
+  }
+  
+
+}
+@media screen and (max-width:375px){
+
+  input[type="text"] {
+  
+    background-color: whitesmoke;
+    width: 70%;
+    padding: 15px 22px;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 4px solid #03f7ff;
+    border-radius: 5px;   
+     text-align: center;
+     font-size: 1.25em;
+  }
+
+  button{
+    background-color: whitesmoke;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.25em;
+    padding: 15px 20px;
+    border-radius: 5px; 
+    border: 2px solid #03f7ff;
+  }
+  button:hover{
+    background-color: #03f7ff;
+    
+  }
+  
+
+
+}
+@media screen and (max-width:414px){
+
+  input[type="text"] {
+  
+    background-color: whitesmoke;
+    width: 70%;
+    padding: 15px 22px;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 4px solid #03f7ff;
+    border-radius: 5px;   
+     text-align: center;
+     font-size: 1.25em;
+  }
+
+  button{
+    background-color: whitesmoke;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.25em;
+    padding: 15px 20px;
+    border-radius: 5px; 
+    border: 2px solid #03f7ff;
+  }
+  button:hover{
+    background-color: #03f7ff;
+    
+  }
+  
+
+
+}
+@media screen and (max-width:320px){
+
+  input[type="text"] {
+  
+    background-color: whitesmoke;
+    width: 80%;
+    padding: 15px 22px;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 4px solid #03f7ff;
+    border-radius: 5px;   
+     text-align: center;
+     font-size: 1.15em;
+  }
+
+  button{
+    background-color: whitesmoke;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.15em;
+    padding: 15px 18px;
+    border-radius: 5px; 
+    border: 2px solid #03f7ff;
+  }
+  button:hover{
+    background-color: #03f7ff;
+    
+  }
+  
+
+
+}
+@media screen and (max-width:550px){
+
+  input[type="text"] {
+  
+    background-color: whitesmoke;
+    width: 60%;
+    padding: 15px 22px;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 4px solid #03f7ff;
+    border-radius: 5px;   
+     text-align: center;
+     font-size: 1.15em;
+  }
+
+  button{
+    background-color: whitesmoke;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.15em;
+    padding: 15px 18px;
+    border-radius: 5px; 
+    border: 2px solid #03f7ff;
+  }
+  button:hover{
+    background-color: #03f7ff;
+    
+  }
+  
+
+
 }

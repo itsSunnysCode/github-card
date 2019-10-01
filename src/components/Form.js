@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import '../App.css'
 import Card from './Card'
 const Form=()=>{
     const [userName, setuserName] = useState('');
@@ -53,11 +54,12 @@ const Form=()=>{
        />
   }
     return(
-        <div>
+        <div className='mainDiv'>
+        <div className="bg"></div>
         <form onSubmit={submitHandler}>
-        <h1>GITHUB CARD</h1><br />
-        <input type='text' value= {userName} placeholder='enter github username' onChange={(e)=>setuserName(e.target.value)} required ></input><br />
-        <button type='submit'>Search</button>
+        <h1>Github Card</h1><br />
+        <input type='text'  placeholder='Enter Github Username' onChange={(e)=>setuserName(e.target.value)} required ></input><br />
+        <button type='submit'><strong>Search</strong></button>
         </form>
         {page}
         </div>
